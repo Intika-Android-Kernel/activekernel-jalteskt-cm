@@ -44,6 +44,12 @@ modules.builtin
 /System.map
 /Module.markers
 /Module.symvers
+/zImage
+zImage
+/*zip
+/boot.img
+/CM-11-E300S-bestmjh47_kernel.zip
+CM-11-E300S-bestmjh47_kernel.zip
 
 #
 # Debian directory (make deb-pkg)
@@ -63,6 +69,12 @@ include/config
 include/linux/version.h
 include/generated
 arch/*/include/generated
+ramdisk/*img
+arch/arm/boot/Image
+arch/arm/boot/compressed/vmlinux
+arch/arm/boot/compressed/piggy.xzkern
+ramdisk_cm/*gz
+ramdisk_cm/boot.img-ramdisk.gz
 
 # stgit generated dirs
 patches-*
@@ -84,7 +96,6 @@ GTAGS
 *.orig
 *~
 \#*#
-
 
 # For some reason git keeps seeing these artifacts
 arch/arm/boot/Image
