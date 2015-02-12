@@ -1,5 +1,5 @@
 CONFIG_EXPERIMENTAL=y
-CONFIG_LOCALVERSION="-ActiveKernel-Multiboot-v4.7"
+CONFIG_LOCALVERSION="-ActiveKernel-Multiboot-v5.0"
 
 # KSM support
 CONFIG_KSM=y
