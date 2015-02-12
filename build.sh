@@ -9,7 +9,7 @@ rm -rf *.zip
 rm -rf ramdisk/*.gz
 rm -rf ramdisk/*.img
 rm -rf ramdisk/*.zip
-TOOLCHAINPATH=/$HOME/toolchain/arm-eabi-4.7/bin
+TOOLCHAINPATH=/$HOME/toolchain/arm-eabi-5.0/bin
 export ARCH=arm
 export CROSS_COMPILE=$TOOLCHAINPATH/arm-eabi-
 make cyanogenmod_jalteskt_defconfig
@@ -32,8 +32,8 @@ mkbootimg --base 0x10000000 --pagesize 2048 --kernel zImage --ramdisk ramdisk/bo
 cp -f $HOME/kernel/activekernel-jalteskt/stock/ramdisk/data/media/stock.img ramdisk/data/media/stock.img
 cp -f $HOME/kernel/activekernel-jalteskt/stock/ramdisk/data/media/stock.img ramdisk/data/media/boot.img
 cd ramdisk
-zip -r Multiboot_kernel_e300_v4.7.zip META-INF data boot.img
-mv -v Multiboot_kernel_e300_v4.7.zip ../
+zip -r Multiboot_kernel_e300_v5.0.zip META-INF data boot.img
+mv -v Multiboot_kernel_e300_v5.0.zip ../
 cd ../
 rm -rf $HOME/kernel/activekernel-jalteskt/stock/ramdisk/data/media/cm.img
 cp -f ramdisk/data/media/cm.img $HOME/kernel/activekernel-jalteskt/stock/ramdisk/data/media/cm.img
